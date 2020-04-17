@@ -143,11 +143,31 @@ a {
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  grid-gap: 1em;
 }
 
 .sidebar aside {
   order: 2;
   max-width: 35ch;
+}
+
+main .stack {
+  padding-right: 1em;
+}
+
+@media screen and (max-width: 100ch) {
+  .sidebar {
+    display: block;
+  }
+
+  .sidebar aside {
+    max-width: 100%;
+  }
+
+  main .stack {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
 }
 
 aside .stack {
@@ -202,4 +222,11 @@ ul[title]::before {
 
 ul li::before {
   content: "-";
+}
+
+footer {
+  margin-top: var(--s2);
+  margin-bottom: var(--s2);
+  border-top: 2px solid currentColor;
+  text-align: center;
 }
