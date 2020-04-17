@@ -1,4 +1,205 @@
-body {
-  max-width: 800px;
-  margin: 0 auto;
+/* 
+**
+** IMPORTS
+**
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+/* 
+**
+** Variables
+**
+*/
+
+:root {
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.25rem;
+
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  --measure: 75ch;
+}
+
+/* 
+**
+** GLOBAL 
+**
+*/
+
+* {
+  box-sizing: border-box;
+  max-width: var(--measure);
+  font-family: "Manrope", serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+a {
+  color: currentColor;
+}
+
+/* 
+**
+** UTILITY: TYPOGRAPHY
+**
+*/
+
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:lg {
+  font-size: var(--font-size-lg) !important;
+}
+
+.font-size\:xl {
+  font-size: var(--font-size-xl) !important;
+}
+
+/* 
+**
+** UTILITY: SPACING
+**
+*/
+
+.max-width\:measure {
+  max-width: var(--measure);
+}
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--measure) * 1.5);
+}
+
+/* 
+**
+** STACK
+**
+*/
+
+.stack {
+  display: block;
+}
+
+[class^="stack"] > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--s1);
+}
+
+.stack-lg {
+  margin-top: var(--s2);
+  margin-bottom: var(--s3);
+}
+
+.stack > h2,
+.stack > h3 {
+  margin-top: var(--s3);
+}
+
+/* 
+**
+** SIDEBAR
+**
+*/
+
+.sidebar {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+
+.sidebar aside {
+  order: 2;
+  max-width: 35ch;
+}
+
+aside .stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+aside .stack:first-child {
+  /* border-left: 2px solid currentColor; */
+  padding: var(--s2);
+  background-color: rgb(255, 246, 222);
+}
+
+/* In the stack split example, this pushes the button to the bottom */
+aside .stack > :nth-child(2) {
+  margin-bottom: auto;
+}
+
+.sidebar aside ul {
+  padding: 0; /* reset default */
+  list-style: none;
+}
+
+/* 
+**
+** UNIQUE
+**
+*/
+
+#title {
+  border-bottom: 2px solid currentColor;
+  margin-top: var(--s1);
+  margin-bottom: var(--s1);
+}
+
+#title h1 {
+  margin: 0;
+}
+
+blockquote {
+  border-left: var(--s-1) solid currentColor;
+  padding-left: var(--s0);
+  margin-left: var(--s1);
+}
+ul[title]::before {
+  content: attr(title);
+  display: block;
+  font-weight: bold;
+  margin-bottom: var(--s-2);
+}
+
+ul li::before {
+  content: "-";
 }

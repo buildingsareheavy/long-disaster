@@ -4,9 +4,17 @@ title: The Long Disaster
 subtitle: Resiliency Through Variety of Effort
 ---
 
+<div id="intro-quote" class="stack-lg">
+
 > “This is an extraordinary time full of vital, transformative movements that could not be foreseen. It’s also a nightmarish time. Full engagement requires the ability to perceive both.”
 >
-> \- Rebecca Solnit, A Paradise Built in Hell
+> -- <cite>[Rebecca Solnit, A Paradise Built in Hell][1]</cite>
+
+[1]: http://rebeccasolnit.net/book/a-paradise-built-in-hell/
+
+</div>
+
+<div class="stack">
 
 “Disaster Response” presumes that disasters are one-time events, to which response protocols can be applied. For whatever crisis appears, teams of people with training and resources assist in saving lives and easing suffering. Those of us engaged in such work are noticing that disasters are not as discrete as they appear to be. Climate disasters, political disasters, economic disasters and the consequences of old and new means of war are no longer isolated to a time or a place. They are beginning to emerge as a single, continuous event.
 
@@ -78,10 +86,4 @@ It is tempting to ask who to talk to, where to go, what class to take or how to 
 
 Communities are already naturally converging around the concepts described here. Some might call this design pattern thinking. As such, we urge those interested in this work to remain conceptual and resist the pretenses of “official”. This work will involve officialdom like spawning new institutions, obtaining certifications, licenses, contracts and other agreements as a matter of course. Yet, the core task is one so large that it cannot be contained by officialdom. It must exist as festivals do, as gatherings of humans taking a break from the normal order and experimenting with a new way of being that we can see taking root in the soils of rubble soon to come.
 
-Nick Farr ([nick@nickfarr.org](mailto:nick@nickfarr.org), N0FAR, he/him) has spent nearly 20 years preparing for and responding to various different disasters. Most recently, he was the Volunteer Coordinator at the Alvaro Obregon 286 building collapse site during the 2017 Mexico City Earthquake. He had the guidance of many in preparing these words and encourages you to reach out with your own thoughts over e-mail, HF or the [BWB Worldwide Slack](https://join.slack.com/t/bwbworldwide/shared_invite/zt-b3ld2pw3-iUffF~AwexfY9EmrB4LaCQ).
-
-### Stay Connected with Burners Without Borders:
-
-- [Website](https://www.burnerswithoutborders.org/)
-- [Facebook](https://www.facebook.com/BurnersWithoutBorders/?eid=ARBRwNGB8jLjdmdLHSMaXGIc77E1v42HmYPAI6HngPfUDof_QVbRYW8oMYz8p-wF4DuPOHkpFA5lOFEb)
-- [Volunteers Worldwide FB Group](https://www.facebook.com/groups/volunteersBWB/)
+</div>
